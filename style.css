@@ -1,0 +1,100 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Bangers', cursive;
+}
+
+h2{
+  color:rgb(99, 85, 85);
+}
+
+img,iframe {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Settings For Menu */
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: rgb(99, 85, 85);
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: rgb(252, 252, 252);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: rgba(26, 29, 28, 0.685);
+}
+
+/* Settings For Contact Us*/
+
+/* Style inputs */
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: rgb(99, 85, 85);
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: grey;
+}
+
+/* Style the container/contact section */
+.contactus-container {
+  border-radius: 5px;
+  background-image: url("https://i.pinimg.com/236x/9a/25/ae/9a25aeefd3c41788b0135ce705a89e37.jpg");
+  padding: 10px;
+  color:rgb(99, 85, 85);
+}
+
+/* Create two columns that float next to eachother */
+.contactus-column {
+  float: left;
+  width: 50%;
+  margin-top: 6px;
+  padding: 20px;
+}
+
+/* Clear floats after the columns */
+.contactus-row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .contactus-column, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
